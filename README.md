@@ -1,4 +1,5 @@
 Project Overview
+
 This project implements an Intrusion Detection System using machine learning techniques to classify network traffic as normal or anomalous. The system is trained on network traffic data and evaluates three different machine learning models: Logistic Regression, K-Nearest Neighbors (KNN), and Decision Trees.
 
 Features
