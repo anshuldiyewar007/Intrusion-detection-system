@@ -1,83 +1,55 @@
-Project Overview
+# Intrusion Detection System - Machine Learning Models
 
-This project implements an Intrusion Detection System using machine learning techniques to classify network traffic as normal or anomalous. The system is trained on network traffic data and evaluates three different machine learning models: Logistic Regression, K-Nearest Neighbors (KNN), and Decision Trees.
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.2+-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Features
+This repository contains code for building and evaluating machine learning models for intrusion detection using network traffic data.
 
---Data preprocessing and feature selection
---Three machine learning models for intrusion detection
---Performance evaluation including accuracy, precision, recall, and F1-score
---ROC curve analysis for model comparison
---Hyperparameter optimization using Optuna
+## Table of Contents
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Installation](#installation)
 
-Requirements
---Python 3.x
 
-Required Python packages:
+## Overview
 
-numpy
-pandas
-seaborn
-matplotlib
-scikit-learn
-optuna
-xgboost
-lightgbm
-tabulate
+The project focuses on detecting network intrusions (anomalies) using three different machine learning models:
+1. Logistic Regression
+2. K-Nearest Neighbors (KNN)
+3. Decision Tree
 
-Installation
+The implementation includes:
+- Data preprocessing
+- Feature selection
+- Model training and evaluation
+- Performance visualization
 
-Clone the repository:
+## Dataset
 
-bash
-git clone [repository-url]
+The dataset contains network traffic features with binary classes ("normal" or "anomaly").
 
-cd intrusion-detection-system
+**Key characteristics:**
+- Training data shape: (125,973 × 42)
+- Test data shape: (22,544 × 41)
+- No missing values
+- Class distribution:
+  - Normal: [count]
+  - Anomaly: [count]
 
-Install the required packages:
+## Installation
 
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/intrusion-detection.git
+cd intrusion-detection
+Install requirements:
 
 bash
 pip install -r requirements.txt
+Requirements:
 
-Dataset
+Python 3.8+
 
-The project uses the NSL-KDD dataset for training and testing. The dataset should be placed in the specified Google Drive path or can be modified to use local paths.
-
-Usage
-
-Run the Jupyter notebook CS.ipynb which contains all the code:
-
-bash
-
-jupyter notebook CS.ipynb
-
-
-
-The notebook performs the following steps:
---Data loading and exploration
---Data preprocessing and feature selection
---Model training and evaluation
---Performance comparison and visualization
-
-Models Implemented
---Logistic Regression
-   Accuracy: 92%
-   AUC: 0.94
-
---K-Nearest Neighbors (KNN)
-  Accuracy: 98%
-  AUC: 0.98
-
---Decision Tree
- Accuracy: 99%
- AUC: 0.99
-
-Results
-The Decision Tree model performed best with 99% accuracy, followed by KNN at 98%, and Logistic Regression at 92%. ROC curve analysis shows that all models perform significantly better than random guessing.
-
-
-Future Work
-Implement more advanced models like Random Forest or Neural Networks
 
 
